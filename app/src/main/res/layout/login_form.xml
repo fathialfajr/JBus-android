@@ -12,7 +12,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/nunito_black"
         android:gravity="center"
         android:text="JBUS\n🚌"
         android:textColor="@color/black"
@@ -23,21 +23,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginHorizontal="36dp">
+
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito"
             android:hint="Email"
             android:inputType="textEmailAddress" />
+
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:layout_marginBottom="20dp"/>
+            android:inputType="textPassword" />
         <Button
             android:id="@+id/login_button"
             android:layout_width="match_parent"
