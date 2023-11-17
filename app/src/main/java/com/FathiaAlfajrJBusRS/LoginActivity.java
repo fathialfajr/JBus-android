@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super, onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
         registerNow = findViewById(R.id.register_now);
@@ -29,11 +29,15 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
         registerNow.setOnClickListener(v -> {
             moveActivity(this, RegisterActivity.class);
-        })
+        });
     }
 
     private void viewToast(Context ctx, String message) {
         Toast.makeText(ctx, message, Toast.LENGTH_SHORT).show();
+
+        loginButton.setOnClickListener(v -> {
+            viewToast(this,String.valueOf(MainActivity.class));
+        });
     }
 
 }

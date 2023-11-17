@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C9CBA3"
+    tools:context=".LoginActivity"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".LoginActivity"> <!-- Add this line -->
+    android:background="#C9CBA3"
+    android:orientation="vertical"> <!-- Add this line -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_black"
         android:gravity="center"
-        android:text="Hi, welcome to JBus\n🚌"
+        android:text="🚌 JBus"
         android:textColor="#472D30"
         android:textSize="48sp" />
 
@@ -22,18 +23,46 @@
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="36dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginHorizontal="36dp">
 
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito"
+            android:hint="Username"
+            android:inputType="textUsername" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/nunito"
+            android:hint="Password"
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/register_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#E26D5C"
-            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/nunito"
+            android:paddingHorizontal="16dp"
             android:paddingVertical="12dp"
-            android:text="Let's get started!"
+            android:text="REGISTER"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:cornerRadius="21dp" />

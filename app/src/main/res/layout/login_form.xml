@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:gravity="center"
+    android:background="#C9CBA3"
     android:orientation="vertical"> <!-- Add this line -->
     <TextView
         android:id="@+id/title"
@@ -14,8 +15,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_black"
         android:gravity="center"
-        android:text="JBUS\n🚌"
-        android:textColor="@color/black"
+        android:text="🚌 JBus"
+        android:textColor="#472D30"
         android:textSize="48sp" />
     <LinearLayout
         android:id="@+id/login_form"
@@ -32,6 +33,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/nunito"
             android:hint="Email"
+            android:textColor="#472D30"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -52,7 +54,7 @@
             android:textAllCaps="false"
             app:cornerRadius="21dp"
             android:textColor="@color/white"
-            android:backgroundTint="@color/black" />
+            android:backgroundTint="#E26D5C" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

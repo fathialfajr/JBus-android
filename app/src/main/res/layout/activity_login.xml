@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:gravity="center"
-    android:background="#C9CBA3"
     android:orientation="vertical"> <!-- Add this line -->
     <TextView
         android:id="@+id/title"
@@ -15,8 +14,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_black"
         android:gravity="center"
-        android:text="JBus\n🚌"
-        android:textColor="#472D30"
+        android:text="JBUS\n🚌"
+        android:textColor="@color/black"
         android:textSize="48sp" />
     <LinearLayout
         android:id="@+id/login_form"
@@ -53,7 +52,7 @@
             android:textAllCaps="false"
             app:cornerRadius="21dp"
             android:textColor="@color/white"
-            android:backgroundTint="#E26D5C" />
+            android:backgroundTint="@color/black" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
