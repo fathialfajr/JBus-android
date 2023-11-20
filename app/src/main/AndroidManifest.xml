@@ -13,20 +13,26 @@
         android:theme="@style/Theme.Jsleepandroid"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".jbus_android.MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".jbus_android.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jbus_android.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.catefort.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
         <meta-data
-            android:name="preloaded_fonts"
+            android:name="preloaded-fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
 
-<activity
-    android:name=".LoginActivity"
-    android:exported="true" >
-<intent-filter>
-    <action android:name="android.intent.action.MAIN"/>
-    <category android:name="android.intent.category.LAUNCHER"/>
-</intent-filter>
-</activity>
+

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".jbus_android.LoginActivity"
     android:gravity="center"
     android:background="#C9CBA3"
     android:orientation="vertical"> <!-- Add this line -->
@@ -29,17 +29,17 @@
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/nunito"
             android:hint="Username"
-            android:inputType="textUsername" />
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/nunito"
             android:hint="Email"
@@ -48,7 +48,7 @@
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/nunito"
             android:hint="Password"

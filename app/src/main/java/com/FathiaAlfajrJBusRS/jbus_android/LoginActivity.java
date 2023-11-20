@@ -1,4 +1,4 @@
-package com.FathiaAlfajrJBusRS;
+package com.FathiaAlfajrJBusRS.jbus_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.FathiaAlfajrJBusRS.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,23 +23,24 @@ public class LoginActivity extends AppCompatActivity {
 
         registerNow = findViewById(R.id.register_now);
         loginButton = findViewById(R.id.login_button);
+        registerNow.setOnClickListener(v->{
+            moveActivity(this, RegisterActivity.class);
+                });
+        loginButton.setOnClickListener(v-> {
+            viewToast(this,"Login");
+            moveActivity(this,MainActivity.class);
+        });
         getSupportActionBar().hide();
     }
 
     private void moveActivity(Context ctx, Class<?> cls) {
         Intent intent = new Intent(ctx, cls);
         startActivity(intent);
-        registerNow.setOnClickListener(v -> {
-            moveActivity(this, RegisterActivity.class);
-        });
     }
 
     private void viewToast(Context ctx, String message) {
         Toast.makeText(ctx, message, Toast.LENGTH_SHORT).show();
 
-        loginButton.setOnClickListener(v -> {
-            viewToast(this,String.valueOf(MainActivity.class));
-        });
     }
 
 }
