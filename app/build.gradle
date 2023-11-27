@@ -1,14 +1,16 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 plugins {
     id 'com.android.application'
 }
 
 android {
-    namespace 'com.FathiaAlfajrJBusRS'
-    compileSdk 33
+    namespace 'com.FathiaAlfajrJBusRS.jbus_android'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.FathiaAlfajrJBusRS"
-        minSdk 21
+        minSdkVersion 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -29,7 +31,8 @@ android {
 }
 
 dependencies {
-
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -37,3 +40,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
+
