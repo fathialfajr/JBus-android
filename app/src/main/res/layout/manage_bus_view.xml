@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C9CBA3"
+    android:orientation="horizontal"
+    tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bus01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="bottom|left"
+            android:text="Astral Express  "
+            android:textColor="#472D30"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+        android:id="@+id/manage_bus"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite"
+        android:backgroundTint="#FFE1A8"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:cornerRadius="21dp"
+        app:icon="@drawable/baseline_calendar_month_24"
+        app:iconTint="#472D30"
+        android:contentDescription="Manage Bus Button"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

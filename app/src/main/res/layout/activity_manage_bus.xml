@@ -16,25 +16,20 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito"
         android:gravity="left"
-        android:text="Welcome to JBus 🚌"
+        android:text="Manage Bus"
         android:textAlignment="center"
-        android:textColor="#472D30"
-        android:textSize="30sp"
-         />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:layout_marginHorizontal="24dp"
-        android:fontFamily="@font/nunito"
-        android:gravity="center"
-        android:lineSpacingExtra="8sp"
-        android:paddingTop="10dp"
-        android:text="What do you need here? let us help you."
-        android:textColor="#472D30"
-        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/add_manage_bus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#808080"
+        android:drawableBottom="@drawable/baseline_add_box_24"
+        android:minHeight="0dp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,23 +37,22 @@
         android:id="@+id/pagination_footer"
         android:orientation="horizontal">
 
+
         <Button
             android:id="@+id/prev_page"
             android:layout_width="56dp"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableLeft="@drawable/baseline_keyboard_arrow_left_24"
-            android:backgroundTint="#E26D5C"
-            android:minHeight="0dp"
-            android:contentDescription="Previous Page"/>
+            android:backgroundTint="#808080"
+            android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+            android:minHeight="0dp" />
 
         <HorizontalScrollView
             android:id="@+id/page_number_scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="25"
-            android:paddingHorizontal="18dp"
-            android:contentDescription="Page Number Scroll">
+            android:paddingHorizontal="18dp">
 
             <LinearLayout
                 android:id="@+id/btn_layout"
@@ -71,19 +65,20 @@
         <Button
             android:id="@+id/next_page"
             android:layout_width="56dp"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#808080"
             android:drawableLeft="@drawable/baseline_keyboard_arrow_right_24"
-            android:minHeight="0dp"
-            android:backgroundTint="#E26D5C"
-            android:contentDescription="Next Page"/>
+            android:minHeight="0dp" />
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/list_bus"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ABEADDDD"
         android:backgroundTint="#FFFFFF" />
 
 </LinearLayout>
+
+

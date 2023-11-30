@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#7BB6C8"
+    android:background="#C9CBA3"
     android:orientation="horizontal"
     tools:ignore="UselessParent">
 
@@ -21,7 +21,7 @@
             android:layout_marginTop="16dp"
             android:gravity="bottom|left"
             android:text="JBus"
-            android:textColor="@android:color/black"
+            android:textColor="#472D30"
             android:textSize="18sp"
             android:textStyle="bold"
             tools:ignore="RtlHardcoded" />
@@ -34,10 +34,10 @@
             android:layout_marginBottom="16dp"
             android:gravity="top|left"
             android:text="JBus adalah aplikasi yang dibuat di OOP"
-            android:textColor="@android:color/black"
+            android:textColor="#472D30"
             android:textSize="14sp"
             tools:ignore="RtlHardcoded" />
-
+`
     </LinearLayout>
 
 

@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".jbus_android.LoginActivity"
+    tools:context=".LoginActivity"
+    android:background="#C9CBA3"
     android:gravity="center"
     android:orientation="vertical"> <!-- Add this line -->
     <!-- Fill the linear layout with some components-->
@@ -15,7 +16,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="JBUS\n🚌"
+        android:fontFamily="@font/nunito_black"
         android:textSize="48sp"
-        android:textColor="@color/black" />
+        android:textColor="#472D30" />
 
 </LinearLayout>

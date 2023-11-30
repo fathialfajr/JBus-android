@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         this.getSupportActionBar().setDisplayShowTitleEnabled(true);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Update the layout file here
+        setContentView(R.layout.main_activity); // Update the layout file here
         prevButton = findViewById(R.id.prev_page);
         nextButton = findViewById(R.id.next_page);
         pageScroll = findViewById(R.id.page_number_scroll);

@@ -15,14 +15,18 @@
         android:layout_width="56dp"
         android:layout_height="48dp"
         android:layout_weight="1"
-        android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
-        android:minHeight="0dp" />
+        android:backgroundTint="#E26D5C"
+        android:drawableLeft="@drawable/baseline_keyboard_arrow_left_24"
+        android:minHeight="0dp"
+        android:contentDescription="Previous Page"/>
+
     <HorizontalScrollView
         android:id="@+id/page_number_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="25"
-        android:paddingHorizontal="18dp">
+        android:paddingHorizontal="18dp"
+        android:contentDescription="Page Number Scroll">
         <LinearLayout
             android:id="@+id/btn_layout"
             android:layout_width="match_parent"
@@ -35,7 +39,9 @@
         android:layout_width="56dp"
         android:layout_height="48dp"
         android:layout_weight="1"
-        android:drawableLeft="@drawable/baseline_arrow_forward_24"
-        android:minHeight="0dp" />
+        android:backgroundTint="#E26D5C"
+        android:drawableLeft="@drawable/baseline_keyboard_arrow_right_24"
+        android:minHeight="0dp"
+        android:contentDescription="Next Page"/>
 </LinearLayout>
 
