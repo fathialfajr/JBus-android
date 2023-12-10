@@ -1,0 +1,23 @@
+<!-- res/drawable/rounded_opacity_background_with_gradient.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Black gradient background (radial gradient with rounded corners) -->
+    <item>
+        <shape>
+            <corners android:radius="12dp" /> <!-- Adjust the radius as needed -->
+            <gradient
+                android:type="radial"
+                android:centerX="0.15"
+                android:centerY="0.15"
+                android:startColor="#6F6F6F"
+                android:endColor="#00000000" /> <!-- Adjust the startColor alpha value as needed -->
+        </shape>
+    </item>
+
+    <!-- Rounded opaque background -->
+    <item android:bottom="12dp">
+        <shape>
+            <solid android:color="#80FFE1A8" /> <!-- Adjust the alpha value as needed -->
+            <corners android:radius="12dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+</layer-list>

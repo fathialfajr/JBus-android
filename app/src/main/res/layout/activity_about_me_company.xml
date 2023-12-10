@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityLiveRegion="none"
+    android:animateLayoutChanges="true"
+    android:animationCache="false"
+    android:background= "@drawable/gradient_background"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="add"
+    android:focusable="auto"
+    android:foregroundGravity="top"
+    android:foregroundTint="#C9CBA3"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".AboutMeCompany"> <!-- Add this line -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/calistoga"
+        android:text="JBUS company"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#472D30"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+
+
+
+    <TextView
+        android:id="@+id/initialCompany"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="24dp"
+        android:background="@drawable/circle_with_border"
+        android:gravity="center"
+        android:hint="F"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="48dp" />
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+
+        android:orientation="vertical"
+        android:paddingBottom="23dp">
+
+        <TextView
+            android:id="@+id/nameCompany"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_background"
+            android:drawableStart="@drawable/baseline_apartment_24"
+            android:drawingCacheQuality="auto"
+            android:fontFamily="@font/nunito"
+            android:hint="  company name"
+            android:insetLeft="50dp"
+            android:insetRight="50dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColorHint="#FAECEE"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/addressCompany"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_background"
+            android:drawingCacheQuality="auto"
+            android:fontFamily="@font/nunito"
+            android:hint="  address"
+            android:drawableStart="@drawable/baseline_home_24"
+            android:insetLeft="50dp"
+            android:insetRight="50dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="16sp"
+            android:typeface="normal"
+            android:textColorHint="#FAECEE"
+            />
+
+        <TextView
+            android:id="@+id/phoneCompany"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_background"
+            android:bufferType="spannable"
+            android:fontFamily="@font/nunito"
+            android:hint="  phone number"
+            android:drawableStart="@drawable/baseline_phone_24"
+            android:insetLeft="50dp"
+            android:insetRight="50dp"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColorHint="#FAECEE"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="polite"
+            android:backgroundTint="#472D30"
+            android:fontFamily="@font/nunito"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="12dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="visible"
+            app:cornerRadius="21dp" />
+
+    </LinearLayout>
+</LinearLayout>

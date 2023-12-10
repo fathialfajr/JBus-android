@@ -5,6 +5,7 @@ import com.FathiaAlfajrJBusRS.jbus_android.model.BaseResponse;
 import com.FathiaAlfajrJBusRS.jbus_android.model.Bus;
 import com.FathiaAlfajrJBusRS.jbus_android.model.BusType;
 import com.FathiaAlfajrJBusRS.jbus_android.model.Facility;
+import com.FathiaAlfajrJBusRS.jbus_android.model.Payment;
 import com.FathiaAlfajrJBusRS.jbus_android.model.Renter;
 import com.FathiaAlfajrJBusRS.jbus_android.model.Station;
 
@@ -66,6 +67,49 @@ public interface BaseApiService {
             @Query("price") int price,
             @Query("stationDepartureId") int stationDepartureId,
             @Query("stationArrivalId") int stationArrivalId
+    );
+
+    @POST("bus/addSchedule")
+    Call<BaseResponse<Bus>> addSchedule(
+            @Query("busId") int busId,
+            @Query("time") String time
+    );
+
+    @GET("bus/getAllBus")
+    Call<BaseResponse<List<Bus>>> getAllBus();
+
+    @POST("payment/makeBooking")
+    Call<BaseResponse<Payment>> makeBooking(
+            @Query("buyerId") int buyerId,
+            @Query("renterId") int renterId,
+            @Query("busId") int busId,
+            @Query("busSeats") List<String> busSeats,
+            @Query("departureDate") String departureDate
+    );
+
+    @GET("payment/getMySeat")
+    Call<BaseResponse<List<Payment>>> getMySeat(
+            @Query("buyerId") int buyerId
+    );
+
+    @GET("bus/getBusPrice")
+    Call<BaseResponse<Bus>> getBusPrice(
+            @Query("busId") int busId
+    );
+
+    @POST("payment/{id}/accept")
+    Call<BaseResponse<Payment>> accept(
+            @Path("id") int id
+    );
+
+    @POST("payment/{id}/cancel")
+    Call<BaseResponse<Payment>> cancel(
+            @Path("id") int id
+    );
+
+    @POST("payment/deletePayment")
+    Call<BaseResponse<Payment>> deletePayment(
+            @Query("id") int id
     );
 }
 

@@ -16,6 +16,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainBusDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Schedule_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutMeCompany"
+            android:exported="false" />
+        <activity
             android:name=".AddBusActivity"
             android:exported="false" />
         <activity
@@ -25,13 +40,13 @@
             android:name=".RegisterRenterActivity"
             android:exported="false" />
         <activity
-            android:name=".jbus_android.MainActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".jbus_android.RegisterActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".jbus_android.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,6 +57,9 @@
 
         <meta-data
             android:name="preloaded-fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
 
